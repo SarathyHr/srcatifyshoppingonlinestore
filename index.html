@@ -784,6 +784,27 @@
       <button id="backToTop" class="back-to-top" title="Go to top"><i class="fas fa-chevron-up"></i></button>
   </div>
 
+  <!-- Firebase Initialization -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-analytics.js";
+    
+    const firebaseConfig = {
+      apiKey: "AIzaSyCzhsNavjZGqR0yJTi_sXoN283Hw-Z9eKU",
+      authDomain: "srcartify-47feb.firebaseapp.com",
+      projectId: "srcartify-47feb",
+      storageBucket: "srcartify-47feb.firebasestorage.app",
+      messagingSenderId: "187729231070",
+      appId: "1:187729231070:web:235db377291b69e48c164f",
+      measurementId: "G-YY22L8TPD7"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    window.firebaseApp = app;
+    console.log("Firebase initialized successfully!");
+  </script>
+
   <script>
       function showToast(message, color = "var(--success)", icon = "fa-check") {
           const toast = document.getElementById('toastMessage');
