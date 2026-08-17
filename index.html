@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -64,6 +63,7 @@
           opacity: 1; /* Reset opacity from previous change */
       }
 
+      /* */
       .top-ticker {
           background: linear-gradient(90deg, var(--primary-dark), var(--primary)); 
           color: var(--white); 
@@ -135,6 +135,7 @@
       }
       .header-nav span:hover { background: rgba(11, 65, 205, 0.15); }
 
+      /* */
       .hero {
           padding: 100px 15px 180px; background: var(--hero-bg); color: var(--white);
           text-align: center; position: relative; overflow: hidden;
@@ -211,6 +212,7 @@
       .btn-primary { background: var(--primary); color: var(--white); box-shadow: 0 8px 20px rgba(11, 65, 205, 0.3); border-radius: 50px;}
       .btn-primary:hover { background: var(--primary-light); transform: translateY(-3px); box-shadow: 0 12px 25px rgba(11, 65, 205, 0.4); }
 
+      /* */
       .stats-bar {
           max-width: 1000px; margin: -60px auto 50px; padding: 30px;
           border-radius: 30px; display: grid; grid-template-columns: repeat(3, 1fr);
@@ -289,6 +291,7 @@
       .filter-btn-drop i { width: 20px; text-align: center; color: var(--text-light); transition: 0.2s;}
       .filter-btn-drop:hover i, .filter-btn-drop.active i { color: var(--primary); }
 
+      /* */
       .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 35px; }
       
       .product-card { 
@@ -339,7 +342,7 @@
       }
       .btn-buy-link:hover { background: white; border-color: var(--primary); transform: translateY(-3px); box-shadow: 0 8px 15px rgba(11, 65, 205, 0.1); }
 
-      /* Admin controls aligned with HR Platform */
+      /* */
       .admin-card-controls { position: absolute; top: 15px; right: 15px; display: none; gap: 10px; z-index: 10; }
       .admin-mode .admin-card-controls { display: flex; }
       .admin-card-btn { 
@@ -351,7 +354,6 @@
       .btn-del-card { background: var(--accent-red); }
       .admin-card-btn:hover { transform: scale(1.15); box-shadow: 0 6px 15px rgba(0,0,0,0.25);}
 
-      /* Admin section aligned with HR Platform */
       #adminSection { display: none; margin-bottom: 60px; }
       .admin-upload-tool { 
           background: var(--white); border-radius: 30px; padding: 40px; 
@@ -394,6 +396,7 @@
       }
       .btn-cancel-edit:hover { background: #e2e8f0; color: #0f172a; }
 
+      /* */
       .product-modal { 
           position: fixed; top: 0; left: 0; width: 100%; height: 100%; 
           background: rgba(7, 42, 133, 0.9); display: flex; justify-content: center; align-items: center; 
@@ -430,7 +433,6 @@
       .modal-prod-old-price { font-size: 1.3rem; color: var(--text-light); text-decoration: line-through; }
       .modal-prod-desc { color: var(--text-light); margin-bottom: 40px; line-height: 1.8; font-size: 1.1rem; white-space: pre-line; }
 
-      /* Toast matching HR platform */
       .toast { 
           position: fixed; top: 30px; right: 30px; background: white; color: var(--primary-dark); 
           padding: 18px 28px; border-radius: 20px; box-shadow: 0 20px 50px rgba(11, 65, 205, 0.15); 
@@ -498,6 +500,7 @@
       .admin-input:focus { border-color: var(--primary); background: white; box-shadow: 0 0 0 4px rgba(11, 65, 205, 0.1);}
       .admin-error { color: var(--accent-red); font-size: 1rem; font-weight: 700; margin-top: 18px; display: none; }
 
+      /* */
       @media (max-width: 992px) {
           .stats-bar { grid-template-columns: repeat(3, 1fr); padding: 25px 15px; margin-top: -50px; }
           .product-modal-grid { grid-template-columns: 1fr; }
@@ -543,7 +546,7 @@
   <div class="scroll-progress-container"><div class="scroll-progress-bar" id="progressBar"></div></div>
   
   <div id="preloader">
-      <img src="WhatsApp Image 2026-08-17 at 12.35.35 PM.jpeg" alt="Sr.Cartify" class="preloader-logo">
+      <img src="WhatsApp Image 2026-08-17 at 12.35.35 PM.jpeg" alt="Sr.Cartify" class="preloader-logo" onerror="this.src='https://placehold.co/280x120/0B41CD/FFF?text=SR+Cartify'">
       <div style="margin-top: 15px; font-weight: 700; font-size: 1rem; color: var(--text-light); letter-spacing: 2px;">LOADING EXPERIENCE</div>
   </div>
   
@@ -551,7 +554,7 @@
 
   <header>
       <div class="header-logo" id="secretAdminTriggerHeader">
-           <img src="WhatsApp Image 2026-08-17 at 12.35.35 PM.jpeg" alt="Sr.Cartify Logo">
+           <img src="WhatsApp Image 2026-08-17 at 12.35.35 PM.jpeg" alt="Sr.Cartify Logo" onerror="this.src='https://placehold.co/150x50/FFF/0B41CD?text=SR+Cartify'">
       </div>
       <div class="header-nav">
           <span><i class="fas fa-truck-fast" style="color:var(--accent-cyan)"></i> Fast Delivery</span>
@@ -631,6 +634,7 @@
           </div>
       </div>
 
+      <!-- -->
       <div id="adminSection">
           <div class="admin-upload-tool reveal">
               <div class="admin-tool-header">
@@ -710,7 +714,7 @@
 
   <footer>
       <div id="secretAdminTrigger" class="footer-logo" style="cursor: pointer; user-select: none; display: inline-block;">
-           <img src="WhatsApp Image 2026-08-17 at 12.35.35 PM.jpeg" alt="Sr.Cartify Logo" style="filter: none; background: white; padding: 10px; border-radius: 12px; height: 80px;">
+           <img src="WhatsApp Image 2026-08-17 at 12.35.35 PM.jpeg" alt="Sr.Cartify Logo" style="filter: none; background: white; padding: 10px; border-radius: 12px; height: 80px;" onerror="this.src='https://placehold.co/150x50/FFF/0B41CD?text=SR+Cartify'">
       </div>
       <p style="opacity: 0.9; margin: 20px 0 30px; font-size: 1.15rem; font-weight: 500;">Your ultimate destination for premium quality products.</p>
       
@@ -774,6 +778,7 @@
       </div>
   </div>
 
+  <!-- FOMO Popup -->
   <div id="fomoPopup" class="fomo-popup">
       <img src="" class="fomo-img" id="fomoImg" alt="Product">
       <div class="fomo-text-content">
@@ -783,11 +788,10 @@
   </div>
 
   <div class="action-floats">
-      <button id="backToTop" class="back-to-top" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+      <button id="backToTop" class="back-to-top" title="Go to top"><i class="fas fa-chevron-up"></i></button>
   </div>
 
   <script>
-      // --- Utilities ---
       function showToast(message, color = "var(--success)", icon = "fa-check") {
           const toast = document.getElementById('toastMessage');
           if(!toast) return;
@@ -804,17 +808,19 @@
       }
 
       function formatINR(number) {
-          return `₹${Number(number).toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+          return new Intl.NumberFormat('en-IN', {
+              style: 'currency',
+              currency: 'INR',
+              minimumFractionDigits: 2,
+              maximumFractionDigits: 2
+          }).format(number);
       }
 
-      // --- Product Database ---
       let products = [
-          { id: 1, name: "Sony WH-1000XM5 Wireless Headphones", category: "ELECTRONICS", price: 29999.00, oldPrice: 34999.00, badge: "Trending", img: "https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?auto=format&fit=crop&q=80&w=600&h=600", buyLink: "https://example.com/buy/1", description: "Industry-leading noise cancellation optimized to you.\n\nMagnificent Sound, engineered to perfection. Crystal clear hands-free calling with 4 beamforming microphones. Up to 30-hour battery life with quick charging." },
-          { id: 2, name: "Nike Air Max 270 Premium", category: "FASHION", price: 12999.00, oldPrice: null, badge: "Trending", img: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&q=80&w=600&h=600", buyLink: "https://example.com/buy/2", description: "Legendary Air gets lifted. The Nike Air Max 270 delivers visible air under every step for extreme comfort.\n\nUpdated for modern comfort, it nods to the original with its exaggerated tongue and heritage logo design." },
-          { id: 3, name: "Apple Watch Series 9 GPS", category: "ELECTRONICS", price: 41900.00, oldPrice: null, badge: "", img: "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?auto=format&fit=crop&q=80&w=600&h=600", buyLink: "https://example.com/buy/3", description: "Smarter. Brighter. Mightier.\n\nThe most powerful chip in Apple Watch ever. A magical new way to use your watch without touching the screen. A display that's twice as bright. Advanced health features like blood oxygen and ECG apps." },
-          { id: 4, name: "Nordic Minimalist Desk Lamp", category: "HOME", price: 1999.00, oldPrice: 2499.00, badge: "-20%", img: "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&q=80&w=600&h=600", buyLink: "https://example.com/buy/4", description: "Illuminate your workspace with this sleek, minimalist desk lamp.\n\nFeatures 5 adjustable brightness levels, 3 color temperatures, eye-caring LED technology, and a flexible gooseneck for perfect lighting angles. Includes a built-in USB charging port." },
-          { id: 5, name: "Vintage Leather Executive Backpack", category: "FASHION", price: 4999.00, oldPrice: 5999.00, badge: "Trending", img: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&q=80&w=600&h=600", buyLink: "https://example.com/buy/5", description: "Handcrafted from genuine full-grain leather, this backpack combines timeless style with modern functionality.\n\nIncludes a padded laptop sleeve fitting up to 15-inch devices, multiple quick-access pockets, and ergonomic shoulder straps." },
-          { id: 6, name: "Echo Studio Smart Home Speaker", category: "HOME", price: 8999.00, oldPrice: 10999.00, badge: "-18%", img: "https://images.unsplash.com/photo-1589492477829-5e65395b66cc?auto=format&fit=crop&q=80&w=600&h=600", buyLink: "https://example.com/buy/6", description: "Room-filling sound, intelligent assistant built-in.\n\nFeatures 5 speakers that produce powerful bass, dynamic midrange, and crisp highs. Dolby Atmos processing adds space, clarity, and depth. Control your smart home devices using just your voice." }
+          { id: 1, name: "Sony WH-1000XM5 Wireless Headphones", category: "ELECTRONICS", price: 29999.00, oldPrice: 34999.00, badge: "Best Seller", img: "https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?auto=format&fit=crop&q=80&w=600&h=600", buyLink: "https://example.com/buy/1", purchases: 3200, limited: true, description: "Industry-leading noise cancellation optimized to you.\n\nMagnificent Sound, engineered to perfection. Crystal clear hands-free calling with 4 beamforming microphones. Up to 30-hour battery life with quick charging." },
+          { id: 2, name: "Nike Air Max 270 Premium", category: "FASHION", price: 12999.00, oldPrice: null, badge: "New", img: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&q=80&w=600&h=600", buyLink: "https://example.com/buy/2", purchases: 1500, limited: false, description: "Legendary Air gets lifted. The Nike Air Max 270 delivers visible air under every step for extreme comfort.\n\nUpdated for modern comfort, it nods to the original with its exaggerated tongue and heritage logo design." },
+          { id: 3, name: "Apple Watch Series 9 GPS", category: "ELECTRONICS", price: 41900.00, oldPrice: null, badge: "", img: "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?auto=format&fit=crop&q=80&w=600&h=600", buyLink: "https://example.com/buy/3", purchases: 890, limited: false, description: "Smarter. Brighter. Mightier.\n\nThe most powerful chip in Apple Watch ever. A magical new way to use your watch without touching the screen. A display that's twice as bright. Advanced health features like blood oxygen and ECG apps." },
+          { id: 4, name: "Nordic Minimalist Desk Lamp", category: "HOME", price: 1999.00, oldPrice: 2499.00, badge: "-20%", img: "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&q=80&w=600&h=600", buyLink: "https://example.com/buy/4", purchases: 2100, limited: true, description: "Illuminate your workspace with this sleek, minimalist desk lamp.\n\nFeatures 5 adjustable brightness levels, 3 color temperatures, eye-caring LED technology, and a flexible gooseneck for perfect lighting angles. Includes a built-in USB charging port." }
       ];
 
       const categoryIcons = {
@@ -831,52 +837,150 @@
           'PETS': 'fa-paw'
       };
 
-      // --- STREAMING_CHUNK:Rendering Engine ---
       function renderProducts() {
           const grid = document.getElementById('productGrid');
           
           grid.innerHTML = products.map((p, index) => `
-              <div class="product-card" data-category="${p.category}" data-name="${p.name.toLowerCase()}" style="animation: reveal 0.5s ease forwards ${index * 0.1}s; opacity: 0; transform: translateY(20px);">
+              <div class="product-card" data-category="${p.category.toUpperCase()}" data-name="${p.name.toLowerCase()}" style="animation: reveal 0.5s ease forwards ${index * 0.1}s; opacity: 0; transform: translateY(20px);">
                   <div class="admin-card-controls">
-                      <button class="admin-card-btn btn-edit-card" onclick="editProduct(${p.id}); event.stopPropagation();" title="Edit"><i class="fas fa-edit"></i></button>
-                      <button class="admin-card-btn btn-del-card" onclick="deleteProduct(${p.id}); event.stopPropagation();" title="Delete"><i class="fas fa-trash"></i></button>
+                      <button class="admin-card-btn btn-edit-card" onclick="editProduct(${p.id}); event.stopPropagation();" title="Edit"><i class="fas fa-pen"></i></button>
+                      <button class="admin-card-btn btn-del-card" onclick="requestDelete(${p.id}); event.stopPropagation();" title="Delete"><i class="fas fa-trash"></i></button>
                   </div>
                   ${p.badge ? `<div class="product-badge">${p.badge}</div>` : ''}
+                  ${p.limited ? `<div class="urgency-badge" style="position: absolute; top: 20px; right: 20px; z-index: 3;"><i class="fas fa-fire"></i> Limited Stock</div>` : ''}
                   <div class="product-img-box" onclick="openProductModal(${p.id})">
-                      <img src="${p.img}" alt="${p.name}" loading="lazy" onerror="this.src='https://placehold.co/600x600/f4f7fc/0B41CD?text=Image+Not+Found'">
+                      <img src="${p.img}" alt="${p.name}" loading="lazy" onerror="this.src='https://placehold.co/600x600/f8fafc/0B41CD?text=Image+Not+Found'">
                   </div>
                   <div class="product-content">
-                      <div class="product-category"><i class="fas ${categoryIcons[p.category] || 'fa-tag'}"></i> ${p.category}</div>
+                      <div class="product-meta-top"><span class="cat-tag">${p.category}</span>${p.purchases > 1000 ? `<span style="font-size: 0.75rem; color: var(--accent-red); font-weight: 800;"><i class="fas fa-shopping-cart"></i> ${(p.purchases/1000).toFixed(1)}K+ Sold</span>` : ''}</div>
                       <h3 class="product-title" onclick="openProductModal(${p.id})">${p.name}</h3>
                       <div class="product-rating">
                           <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
                           <span>(4.9)</span>
                       </div>
                       <div class="product-bottom">
-                          <div class="product-price">
+                          <div class="price-row">
                               <span class="current-price">${formatINR(p.price)}</span>
-                              ${p.oldPrice ? `<span class="old-price">${formatINR(p.oldPrice)}</span>` : '<span class="old-price" style="visibility:hidden;">-</span>'}
+                              ${p.oldPrice ? `<span class="old-price">${formatINR(p.oldPrice)}</span>` : ''}
                           </div>
-                          <a href="${p.buyLink || '#'}" target="_blank" class="btn-buy-link" onclick="event.stopPropagation();">
-                              Buy <i class="fas fa-chevron-right" style="font-size: 0.8rem;"></i>
+                          <a href="${p.buyLink || '#'}" target="_blank" class="btn-card btn-card-buy" onclick="event.stopPropagation();">
+                              <i class="fas fa-bolt"></i> Buy Now
                           </a>
                       </div>
                   </div>
               </div>
           `).join('');
           
-          // Add animation styles dynamically if not present
           if(!document.getElementById('dynamic-animations')) {
               const style = document.createElement('style');
               style.id = 'dynamic-animations';
               style.innerHTML = `@keyframes reveal { to { opacity: 1; transform: translateY(0); } }`;
               document.head.appendChild(style);
           }
-
           filterProducts(); 
       }
 
-      // --- STREAMING_CHUNK:Modal Logic ---
+      let currentFilter = 'ALL';
+      
+      function filterProducts() {
+          const searchInput = document.getElementById('productSearchInput');
+          if(!searchInput) return;
+          const searchTerm = searchInput.value.toLowerCase();
+          const cards = document.querySelectorAll('.product-card');
+          let visibleCount = 0;
+          
+          cards.forEach(card => {
+              const matchesCategory = currentFilter === 'ALL' || card.dataset.category === currentFilter;
+              const matchesSearch = card.dataset.name.includes(searchTerm);
+              
+              if(matchesCategory && matchesSearch) {
+                  card.style.display = 'flex';
+                  card.style.animation = 'none';
+                  void card.offsetWidth; 
+                  card.style.animation = `reveal 0.4s ease forwards ${visibleCount * 0.05}s`;
+                  visibleCount++;
+              } else {
+                  card.style.display = 'none';
+              }
+          });
+          
+          const noProductsFound = document.getElementById('noProductsFound');
+          if(noProductsFound) {
+              noProductsFound.style.display = visibleCount === 0 ? 'block' : 'none';
+          }
+      }
+
+      const searchInputEl = document.getElementById('productSearchInput');
+      if(searchInputEl) {
+         searchInputEl.addEventListener('input', filterProducts);
+      }
+
+      const filterBtns = document.querySelectorAll('.cat-filter-btn');
+      filterBtns.forEach(btn => {
+          btn.addEventListener('click', () => {
+              filterBtns.forEach(b => b.classList.remove('active'));
+              btn.classList.add('active');
+              currentFilter = btn.dataset.filter.toUpperCase();
+              filterProducts();
+          });
+      });
+
+      setInterval(function() {
+          const now = new Date();
+          const dateStr = now.toLocaleDateString('en-US', { month: 'short', day: '2-digit' });
+          const dayStr = now.toLocaleDateString('en-US', { weekday: 'short' });
+          const yearStr = now.getFullYear();
+          
+          let hours = now.getHours();
+          const minutes = now.getMinutes().toString().padStart(2, '0');
+          const ampm = hours >= 12 ? 'PM' : 'AM';
+          hours = hours % 12;
+          hours = hours ? hours : 12;
+          const timeStr = hours.toString().padStart(2, '0') + ':' + minutes;
+          
+          if(document.getElementById("clock-date")) document.getElementById("clock-date").innerText = dateStr;
+          if(document.getElementById("clock-day")) document.getElementById("clock-day").innerText = dayStr;
+          if(document.getElementById("clock-year")) document.getElementById("clock-year").innerText = yearStr;
+          if(document.getElementById("clock-time")) document.getElementById("clock-time").innerText = timeStr;
+          if(document.getElementById("clock-ampm")) document.getElementById("clock-ampm").innerText = ampm;
+      }, 1000);
+
+      window.addEventListener('scroll', () => {
+          const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+          const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+          const progressBar = document.getElementById("progressBar");
+          if(progressBar) progressBar.style.width = (winScroll / height) * 100 + "%";
+          
+          const backBtn = document.getElementById("backToTop");
+          if(backBtn) {
+             window.scrollY > 500 ? backBtn.classList.add("visible") : backBtn.classList.remove("visible");
+          }
+      });
+      
+      const backToTopBtn = document.getElementById("backToTop");
+      if(backToTopBtn) {
+          backToTopBtn.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+      }
+
+      window.addEventListener('load', () => {
+          setTimeout(() => {
+              const preloader = document.getElementById('preloader');
+              if(preloader) {
+                  preloader.classList.add('fade-out');
+                  setTimeout(() => preloader.style.display = 'none', 1200);
+              }
+          }, 1500);
+          renderProducts();
+          reveal(); 
+      });
+
+      function reveal() {
+          document.querySelectorAll(".reveal").forEach(r => {
+              if (r.getBoundingClientRect().top < window.innerHeight - 100) r.classList.add("active");
+          });
+      }
+      window.addEventListener("scroll", reveal);
+
       const productModal = document.getElementById('productModal');
       const closeProductModalBtn = document.getElementById('closeProductModal');
 
@@ -909,152 +1013,29 @@
           document.getElementById('modalProdDesc').textContent = p.description || "Detailed description coming soon.";
           document.getElementById('modalProdBuyBtn').href = p.buyLink || '#';
 
-          productModal.classList.add('active');
-          document.body.style.overflow = 'hidden'; // Prevent background scrolling
+          if(productModal) {
+             productModal.classList.add('active');
+             document.body.style.overflow = 'hidden'; // Prevent background scrolling
+          }
       };
 
       function closeProductModal() {
-          productModal.classList.remove('active');
-          document.body.style.overflow = '';
+          if(productModal) {
+             productModal.classList.remove('active');
+             document.body.style.overflow = '';
+          }
       }
 
-      closeProductModalBtn.addEventListener('click', closeProductModal);
-      productModal.addEventListener('click', (e) => {
-          if (e.target === productModal) closeProductModal();
-      });
+      if(closeProductModalBtn) closeProductModalBtn.addEventListener('click', closeProductModal);
+      if(productModal) {
+          productModal.addEventListener('click', (e) => {
+              if (e.target === productModal) closeProductModal();
+          });
+      }
       document.addEventListener('keydown', (e) => { 
-          if (e.key === "Escape" && productModal.classList.contains('active')) closeProductModal(); 
+          if (e.key === "Escape" && productModal && productModal.classList.contains('active')) closeProductModal(); 
       });
 
-      // --- STREAMING_CHUNK:Event Listeners & Effects ---
-      window.addEventListener('scroll', () => {
-          const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-          const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-          document.getElementById("progressBar").style.width = (winScroll / height) * 100 + "%";
-          
-          const backBtn = document.getElementById("backToTop");
-          window.scrollY > 500 ? backBtn.classList.add("visible") : backBtn.classList.remove("visible");
-      });
-
-      document.getElementById("backToTop").addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
-
-      window.addEventListener('load', () => {
-          setTimeout(() => {
-              const preloader = document.getElementById('preloader');
-              if(preloader) {
-                  preloader.classList.add('fade-out');
-                  setTimeout(() => preloader.style.display = 'none', 1200);
-              }
-          }, 1500); 
-          
-          renderProducts();
-          startLiveClock();
-          reveal(); // Initial check for elements in viewport
-      });
-
-      function reveal() {
-          document.querySelectorAll(".reveal").forEach(r => {
-              const elementTop = r.getBoundingClientRect().top;
-              if (elementTop < window.innerHeight - 100) {
-                  r.classList.add("active");
-              }
-          });
-      }
-      window.addEventListener("scroll", reveal);
-
-      // --- STREAMING_CHUNK:Filtering & Search Logic ---
-      let currentFilter = 'ALL';
-      
-      function filterProducts() {
-          const searchTerm = document.getElementById('productSearchInput').value.toLowerCase();
-          const cards = document.querySelectorAll('.product-card');
-          let visibleCount = 0;
-          
-          cards.forEach(card => {
-              const pCategory = card.dataset.category;
-              const pBadge = card.querySelector('.product-badge') ? card.querySelector('.product-badge').textContent.toLowerCase() : '';
-              
-              let matchesCategory = false;
-              if (currentFilter === 'ALL') matchesCategory = true;
-              else if (currentFilter === 'TRENDING') matchesCategory = pBadge.includes('trending') || pBadge.includes('hot');
-              else if (currentFilter === 'DEALS') matchesCategory = pBadge.includes('%') || pBadge.includes('sale');
-              else matchesCategory = pCategory === currentFilter;
-
-              const matchesSearch = card.dataset.name.includes(searchTerm);
-              
-              if(matchesCategory && matchesSearch) {
-                  card.style.display = 'flex';
-                  // reset animation for re-filtering effect
-                  card.style.animation = 'none';
-                  void card.offsetWidth; 
-                  card.style.animation = `reveal 0.4s ease forwards ${visibleCount * 0.05}s`;
-                  visibleCount++;
-              } else {
-                  card.style.display = 'none';
-              }
-          });
-          
-          document.getElementById('noProductsFound').style.display = visibleCount === 0 ? 'block' : 'none';
-      }
-
-      document.getElementById('productSearchInput').addEventListener('input', filterProducts);
-
-      const filterBtns = document.querySelectorAll('.filter-btn, .filter-btn-drop');
-      const moreBtn = document.getElementById('moreDropdownBtn');
-      
-      filterBtns.forEach(btn => {
-          if(btn.id === 'moreDropdownBtn') return; // Skip the toggle button itself
-          
-          btn.addEventListener('click', () => {
-              // Remove active class from all buttons
-              filterBtns.forEach(b => b.classList.remove('active'));
-              
-              // Add active class to clicked button
-              btn.classList.add('active');
-              currentFilter = btn.dataset.filter;
-              
-              // If a dropdown item was clicked, highlight the "More" button too
-              if(btn.classList.contains('filter-btn-drop')) {
-                  moreBtn.classList.add('active');
-                  moreBtn.innerHTML = `${btn.textContent} <i class="fas fa-caret-down"></i>`;
-              } else {
-                  moreBtn.innerHTML = `More <i class="fas fa-caret-down"></i>`;
-              }
-              
-              filterProducts();
-          });
-      });
-
-      // --- STREAMING_CHUNK:Live Date & Time Clock ---
-      function startLiveClock() {
-          setInterval(function() {
-              const now = new Date();
-              const dateStr = now.toLocaleDateString('en-US', { month: 'short', day: '2-digit' });
-              const dayStr = now.toLocaleDateString('en-US', { weekday: 'short' });
-              const yearStr = now.getFullYear();
-              
-              let hours = now.getHours();
-              const minutes = now.getMinutes().toString().padStart(2, '0');
-              const ampm = hours >= 12 ? 'PM' : 'AM';
-              hours = hours % 12 || 12;
-              
-              const timeStr = hours.toString().padStart(2, '0') + ':' + minutes;
-              
-              const dateEl = document.getElementById("clock-date");
-              const dayEl = document.getElementById("clock-day");
-              const yearEl = document.getElementById("clock-year");
-              const timeEl = document.getElementById("clock-time");
-              const ampmEl = document.getElementById("clock-ampm");
-              
-              if(dateEl) dateEl.innerText = dateStr;
-              if(dayEl) dayEl.innerText = dayStr;
-              if(yearEl) yearEl.innerText = yearStr;
-              if(timeEl) timeEl.innerText = timeStr;
-              if(ampmEl) ampmEl.innerText = ampm;
-          }, 1000);
-      }
-
-      // --- STREAMING_CHUNK:FOMO Notification System ---
       const fomoNames = ["Rahul", "Anjali", "Kiran", "Sneha", "Vishnu", "Priya", "Arjun", "Meera"];
       const fomoLocations = ["Kochi", "Trivandrum", "Mumbai", "Bangalore", "Delhi", "Chennai", "Pune"];
       
@@ -1064,13 +1045,16 @@
           const loc = fomoLocations[Math.floor(Math.random() * fomoLocations.length)];
           const product = products[Math.floor(Math.random() * products.length)];
           
-          document.getElementById('fomoText').innerHTML = `<strong>${name}</strong> from ${loc} bought<br><strong>${product.name.substring(0, 25)}...</strong>`;
-          document.getElementById('fomoImg').src = product.img;
+          const fomoText = document.getElementById('fomoText');
+          if(fomoText) fomoText.innerHTML = `<strong>${name}</strong> from ${loc} bought<br><strong>${product.name.substring(0, 25)}...</strong>`;
+          const fomoImg = document.getElementById('fomoImg');
+          if(fomoImg) fomoImg.src = product.img;
           
           const popup = document.getElementById('fomoPopup');
-          popup.classList.add('show');
-          
-          setTimeout(() => popup.classList.remove('show'), 5000);
+          if(popup) {
+              popup.classList.add('show');
+              setTimeout(() => popup.classList.remove('show'), 5000);
+          }
       }
       
       // Start FOMO randomly after initial load
@@ -1082,185 +1066,228 @@
           }, 15000); 
       }, 10000);
 
-      // --- STREAMING_CHUNK:Admin Panel Logic ---
       const adminModal = document.getElementById('adminModal');
       const adminSection = document.getElementById('adminSection');
-      const fileInput = document.getElementById('prodImgFile');
-      const fileNameDisplay = document.getElementById('fileName');
       let editModeId = null;
       let pressTimer;
 
-      // File input listener
-      fileInput.addEventListener('change', function() {
-          fileNameDisplay.textContent = this.files.length > 0 ? this.files[0].name : "Select an image file...";
-      });
-
-      // Long press logic for secret admin entry
-      const secretTriggers = [document.getElementById('secretAdminTrigger'), document.getElementById('secretAdminTriggerHeader')];
+      const triggers = [document.getElementById('secretAdminTrigger'), document.getElementById('secretAdminTriggerHeader')];
       
       function startPress(e) { 
           if(e.type==='mousedown' && e.button!==0) return; 
           pressTimer = setTimeout(() => { 
-              adminModal.classList.add('active'); 
-              document.getElementById('adminPasscode').focus();
-          }, 1500); // 1.5 seconds long press
+              if(adminModal) adminModal.classList.add('active'); 
+              const passcode = document.getElementById('adminPasscode');
+              if(passcode) passcode.focus();
+          }, 1500); 
       }
       function cancelPress() { clearTimeout(pressTimer); }
       
-      secretTriggers.forEach(trigger => {
+      triggers.forEach(trigger => {
           if(!trigger) return;
           trigger.addEventListener('mousedown', startPress);
           trigger.addEventListener('touchstart', startPress, {passive: true});
           trigger.addEventListener('mouseup', cancelPress);
           trigger.addEventListener('mouseleave', cancelPress);
           trigger.addEventListener('touchend', cancelPress);
-          trigger.addEventListener('touchcancel', cancelPress);
       });
 
-      document.getElementById('closeAdminBtn').addEventListener('click', () => {
-          adminModal.classList.remove('active');
-          document.getElementById('adminErrorMsg').style.display = 'none';
-          document.getElementById('adminPasscode').value = '';
-      });
+      const closeAdminBtn = document.getElementById('closeAdminBtn');
+      if(closeAdminBtn) {
+          closeAdminBtn.addEventListener('click', () => {
+              if(adminModal) adminModal.classList.remove('active');
+              const errorMsg = document.getElementById('adminErrorMsg');
+              if(errorMsg) errorMsg.style.display = 'none';
+              const passcode = document.getElementById('adminPasscode');
+              if(passcode) passcode.value = '';
+          });
+      }
 
-      document.getElementById('adminPasscode').addEventListener('keypress', function (e) {
-          if (e.key === 'Enter') document.getElementById('adminSubmitBtn').click();
-      });
-
-      document.getElementById('adminSubmitBtn').addEventListener('click', () => {
-          if (document.getElementById('adminPasscode').value === "admin") {
-              adminModal.classList.remove('active');
-              document.body.classList.add('admin-mode');
-              adminSection.style.display = 'block';
-              showToast("Admin Dashboard Unlocked", "var(--primary)", "fa-unlock-keyhole");
-              setTimeout(() => {
-                  adminSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
-              }, 300);
-              document.getElementById('adminPasscode').value = '';
-              document.getElementById('adminErrorMsg').style.display = 'none';
-          } else {
-              const errMsg = document.getElementById('adminErrorMsg');
-              errMsg.style.display = 'block';
-              
-              // Shake effect for error matching new styling
-              const box = document.querySelector('.admin-input');
-              box.animate([
-                  { transform: 'translateX(0)' },
-                  { transform: 'translateX(-5px)' },
-                  { transform: 'translateX(5px)' },
-                  { transform: 'translateX(-5px)' },
-                  { transform: 'translateX(5px)' },
-                  { transform: 'translateX(0)' }
-              ], { duration: 300, iterations: 1 });
-          }
-      });
-
-      document.getElementById('exitAdminBtn').addEventListener('click', () => {
-          document.body.classList.remove('admin-mode');
-          adminSection.style.display = 'none';
-          cancelEdit();
-          showToast("Exited Admin Mode", "#64748b", "fa-lock");
-          window.scrollTo({ top: document.getElementById('shop').offsetTop - 100, behavior: "smooth" });
-      });
-
-      // Form Submit (Add/Edit)
-      document.getElementById('productForm').addEventListener('submit', async (e) => {
-          e.preventDefault();
-          
-          const pName = document.getElementById('prodName').value;
-          const pCat = document.getElementById('prodCat').value;
-          const pDesc = document.getElementById('prodDesc').value;
-          const pPrice = parseFloat(document.getElementById('prodPrice').value);
-          const pOldPrice = document.getElementById('prodOldPrice').value ? parseFloat(document.getElementById('prodOldPrice').value) : null;
-          const pBadge = document.getElementById('prodBadge').value;
-          const pBuyLink = document.getElementById('prodBuyLink').value;
-          
-          let pImg = "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&q=80&w=600&h=600"; // Fallback
-          const imgUrl = document.getElementById('prodImgUrl').value;
-          const imgFile = document.getElementById('prodImgFile').files[0];
-
-          if (imgFile) {
-              pImg = await new Promise((resolve) => {
-                  const reader = new FileReader();
-                  reader.onloadend = () => resolve(reader.result);
-                  reader.readAsDataURL(imgFile);
-              });
-          } else if (imgUrl) {
-              pImg = imgUrl;
-          } else if (editModeId) {
-              const existingProduct = products.find(p => p.id === editModeId);
-              if(existingProduct) pImg = existingProduct.img;
-          }
-
-          const productData = {
-              name: pName, category: pCat, description: pDesc, 
-              price: pPrice, oldPrice: pOldPrice, badge: pBadge, 
-              img: pImg, buyLink: pBuyLink
-          };
-
-          if(editModeId) {
-              const idx = products.findIndex(p => p.id === editModeId);
-              if(idx > -1) {
-                  products[idx] = { ...products[idx], ...productData };
-                  showToast("Product Updated Successfully", "var(--primary)", "fa-check-circle");
+      const adminPasscode = document.getElementById('adminPasscode');
+      if(adminPasscode) {
+          adminPasscode.addEventListener('keypress', function (e) {
+              if (e.key === 'Enter') {
+                 const submitBtn = document.getElementById('adminSubmitBtn');
+                 if(submitBtn) submitBtn.click();
               }
-          } else {
-              const newId = products.length > 0 ? Math.max(...products.map(p => p.id)) + 1 : 1;
-              products.unshift({ id: newId, ...productData });
-              showToast("New Product Added", "var(--success)", "fa-plus-circle");
-          }
-          
-          renderProducts();
-          cancelEdit();
-      });
+          });
+      }
+
+      const adminSubmitBtn = document.getElementById('adminSubmitBtn');
+      if(adminSubmitBtn) {
+          adminSubmitBtn.addEventListener('click', () => {
+              const passcodeVal = document.getElementById('adminPasscode').value;
+              if (passcodeVal === "sr@2002619" || passcodeVal === "admin") {
+                  if(adminModal) adminModal.classList.remove('active');
+                  document.body.classList.add('admin-mode');
+                  if(adminSection) adminSection.style.display = 'block';
+                  showToast("Admin Dashboard Unlocked", "var(--primary)", "fa-unlock-keyhole");
+                  setTimeout(() => { if(adminSection) adminSection.scrollIntoView({ behavior: 'smooth', block: 'center' });}, 300);
+                  const passcode = document.getElementById('adminPasscode');
+                  if(passcode) passcode.value = '';
+                  const errorMsg = document.getElementById('adminErrorMsg');
+                  if(errorMsg) errorMsg.style.display = 'none';
+              } else {
+                  const errorMsg = document.getElementById('adminErrorMsg');
+                  if(errorMsg) errorMsg.style.display = 'block';
+                  const box = document.querySelector('.modal-box');
+                  if(box) box.animate([{ transform: 'translateX(0)' }, { transform: 'translateX(-10px)' }, { transform: 'translateX(10px)' }, { transform: 'translateX(0)' }], { duration: 400 });
+              }
+          });
+      }
+
+      const exitAdminBtn = document.getElementById('exitAdminBtn');
+      if(exitAdminBtn) {
+          exitAdminBtn.addEventListener('click', () => {
+              document.body.classList.remove('admin-mode');
+              if(adminSection) adminSection.style.display = 'none';
+              cancelEdit();
+              showToast("Admin Mode Secured", "var(--text-light)", "fa-lock");
+          });
+      }
+      
+      const fileInput = document.getElementById('prodImgFile');
+      if(fileInput) {
+          fileInput.addEventListener('change', function() {
+              const fileNameDisplay = document.getElementById('fileName');
+              if(fileNameDisplay) fileNameDisplay.textContent = this.files.length > 0 ? this.files[0].name : "Select an image file...";
+          });
+      }
+
+      const productForm = document.getElementById('productForm');
+      if(productForm) {
+          productForm.addEventListener('submit', async (e) => {
+              e.preventDefault();
+              
+              let pImg = "https://placehold.co/600x600/f8fafc/0B41CD?text=Product";
+              const imgUrl = document.getElementById('prodImgUrl').value;
+              const imgFile = document.getElementById('prodImgFile') ? document.getElementById('prodImgFile').files[0] : null;
+
+              if (imgFile) {
+                  pImg = await new Promise((resolve) => {
+                      const reader = new FileReader();
+                      reader.onloadend = () => resolve(reader.result);
+                      reader.readAsDataURL(imgFile);
+                  });
+              } else if (imgUrl) {
+                  pImg = imgUrl;
+              } else if (editModeId) {
+                  const existingProduct = products.find(p => p.id === editModeId);
+                  if(existingProduct) pImg = existingProduct.img;
+              }
+
+              const pData = {
+                  name: document.getElementById('prodName').value,
+                  category: document.getElementById('prodCat').value.toUpperCase(), 
+                  img: pImg,
+                  description: document.getElementById('prodDesc') ? document.getElementById('prodDesc').value : '',
+                  price: parseFloat(document.getElementById('prodPrice').value),
+                  oldPrice: document.getElementById('prodOldPrice').value ? parseFloat(document.getElementById('prodOldPrice').value) : null,
+                  badge: document.getElementById('prodBadge').value,
+                  buyLink: document.getElementById('prodBuyLink').value
+              };
+
+              if(editModeId) {
+                  const idx = products.findIndex(p => p.id === editModeId);
+                  if(idx > -1) {
+                      products[idx] = { ...products[idx], ...pData };
+                      showToast("Product Updated Successfully", "var(--accent-cyan)", "fa-check-circle");
+                  }
+              } else {
+                  const newId = products.length > 0 ? Math.max(...products.map(p => p.id)) + 1 : 1;
+                  products.unshift({ id: newId, ...pData });
+                  showToast("New Product Added", "var(--success)", "fa-plus-circle");
+                  
+                  // Add new category pill dynamically if it doesn't exist
+                  if(![...document.querySelectorAll('.cat-filter-btn')].find(b => b.dataset.filter === pData.category)) {
+                      const newBtn = document.createElement('button');
+                      newBtn.className = 'cat-filter-btn';
+                      newBtn.dataset.filter = pData.category;
+                      newBtn.innerText = pData.category.charAt(0) + pData.category.slice(1).toLowerCase();
+                      newBtn.addEventListener('click', () => {
+                          document.querySelectorAll('.cat-filter-btn').forEach(b => b.classList.remove('active'));
+                          newBtn.classList.add('active');
+                          currentFilter = pData.category;
+                          filterProducts();
+                      });
+                      const categoryFilters = document.getElementById('categoryFilters');
+                      if(categoryFilters) categoryFilters.appendChild(newBtn);
+                  }
+              }
+              
+              renderProducts();
+              cancelEdit();
+          });
+      }
 
       window.editProduct = function(id) {
           const p = products.find(x => x.id === id);
           if(!p) return;
           
           editModeId = id;
-          document.getElementById('prodName').value = p.name;
-          document.getElementById('prodCat').value = p.category;
-          document.getElementById('prodDesc').value = p.description || '';
-          document.getElementById('prodPrice').value = p.price;
-          document.getElementById('prodOldPrice').value = p.oldPrice || '';
-          document.getElementById('prodBadge').value = p.badge || '';
-          document.getElementById('prodBuyLink').value = p.buyLink || '';
+          if(document.getElementById('prodName')) document.getElementById('prodName').value = p.name;
+          if(document.getElementById('prodCat')) document.getElementById('prodCat').value = p.category;
+          if(document.getElementById('prodDesc')) document.getElementById('prodDesc').value = p.description || '';
           
-          document.getElementById('prodImgUrl').value = p.img.startsWith('data:image') ? '' : p.img;
-          document.getElementById('prodImgFile').value = ''; 
-          fileNameDisplay.textContent = p.img.startsWith('data:image') ? "Keep existing uploaded image..." : "Select an image file...";
+          if(document.getElementById('prodImgUrl')) document.getElementById('prodImgUrl').value = p.img.startsWith('data:image') ? '' : p.img;
+          if(document.getElementById('prodImgFile')) document.getElementById('prodImgFile').value = '';
+          const fileNameDisplay = document.getElementById('fileName');
+          if(fileNameDisplay) fileNameDisplay.textContent = p.img.startsWith('data:image') ? "Keep existing uploaded image..." : "Select an image file...";
           
-          document.getElementById('formTitle').innerText = "Edit Product Details";
-          document.getElementById('formSubmitBtn').innerHTML = '<i class="fas fa-save"></i> Save Changes';
-          document.getElementById('cancelEditBtn').style.display = 'inline-flex';
+          if(document.getElementById('prodPrice')) document.getElementById('prodPrice').value = p.price;
+          if(document.getElementById('prodOldPrice')) document.getElementById('prodOldPrice').value = p.oldPrice || '';
+          if(document.getElementById('prodBadge')) document.getElementById('prodBadge').value = p.badge || '';
+          if(document.getElementById('prodBuyLink')) document.getElementById('prodBuyLink').value = p.buyLink || '';
           
-          adminSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          if(document.getElementById('formTitle')) document.getElementById('formTitle').innerText = "Edit Product Details";
+          if(document.getElementById('formSubmitBtn')) document.getElementById('formSubmitBtn').innerHTML = '<i class="fas fa-save"></i> Save Changes';
+          if(document.getElementById('cancelEditBtn')) document.getElementById('cancelEditBtn').style.display = 'inline-flex';
           
-          // Highlight form to draw attention
-          const form = document.querySelector('.admin-upload-tool');
-          form.style.boxShadow = '0 0 0 4px rgba(35, 196, 248, 0.3)';
-          setTimeout(() => { form.style.boxShadow = 'var(--shadow-lg)'; }, 1000);
+          if(adminSection) adminSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
       }
 
-      window.deleteProduct = function(id) {
-          if(confirm("Are you sure you want to permanently delete this product?")) {
-              products = products.filter(p => p.id !== id);
-              renderProducts();
-              showToast("Product Removed", "var(--accent-red)", "fa-trash-alt");
-          }
+      let productToDelete = null;
+      const deleteModal = document.getElementById('deleteConfirmModal');
+      
+      window.requestDelete = function(id) {
+          productToDelete = id;
+          if(deleteModal) deleteModal.classList.add('active');
+      }
+
+      const cancelDeleteBtn = document.getElementById('cancelDeleteBtn');
+      if(cancelDeleteBtn) {
+          cancelDeleteBtn.addEventListener('click', () => {
+              if(deleteModal) deleteModal.classList.remove('active');
+              productToDelete = null;
+          });
+      }
+
+      const confirmDeleteBtn = document.getElementById('confirmDeleteBtn');
+      if(confirmDeleteBtn) {
+          confirmDeleteBtn.addEventListener('click', () => {
+              if(productToDelete !== null) {
+                  products = products.filter(p => p.id !== productToDelete);
+                  renderProducts();
+                  showToast("Product permanently deleted.", "var(--accent-red)", "fa-trash");
+                  if(deleteModal) deleteModal.classList.remove('active');
+                  productToDelete = null;
+              }
+          });
       }
 
       function cancelEdit() {
           editModeId = null;
-          document.getElementById('productForm').reset();
-          fileNameDisplay.textContent = "Select an image file...";
-          document.getElementById('formTitle').innerText = "Manage Products";
-          document.getElementById('formSubmitBtn').innerHTML = '<i class="fas fa-plus-circle"></i> Add Product';
-          document.getElementById('cancelEditBtn').style.display = 'none';
+          const productForm = document.getElementById('productForm');
+          if(productForm) productForm.reset();
+          const fileNameDisplay = document.getElementById('fileName');
+          if(fileNameDisplay) fileNameDisplay.textContent = "Select an image file...";
+          if(document.getElementById('formTitle')) document.getElementById('formTitle').innerText = "Manage Products";
+          if(document.getElementById('formSubmitBtn')) document.getElementById('formSubmitBtn').innerHTML = '<i class="fas fa-plus"></i> Add Product';
+          if(document.getElementById('cancelEditBtn')) document.getElementById('cancelEditBtn').style.display = 'none';
       }
       
-      document.getElementById('cancelEditBtn').addEventListener('click', cancelEdit);
+      const cancelEditBtn = document.getElementById('cancelEditBtn');
+      if(cancelEditBtn) cancelEditBtn.addEventListener('click', cancelEdit);
 
   </script>
 </body>
