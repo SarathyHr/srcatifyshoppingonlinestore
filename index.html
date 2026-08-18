@@ -60,6 +60,7 @@
             pointer-events: none;
         }
 
+        /* */
         .top-ticker {
             background: linear-gradient(90deg, var(--primary-dark), var(--primary)); 
             color: var(--white); 
@@ -124,9 +125,10 @@
             display: flex; align-items: center; justify-content: center; border: 2px solid white;
         }
 
+        /* */
         .hero {
             padding: 100px 15px 180px;
-            background: linear-gradient(to right, rgba(11, 65, 205, 0.9), rgba(7, 42, 133, 0.9)), url('image_21c8c1.jpg') no-repeat center center / cover;
+            background: linear-gradient(to right, rgba(11, 65, 205, 0.9), rgba(7, 42, 133, 0.9)), url('https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=1600') no-repeat center center / cover;
             color: var(--white);
             text-align: center;
             position: relative;
@@ -171,6 +173,7 @@
         .btn-hero-primary { background: linear-gradient(135deg, var(--white), #f8fafc); color: var(--primary-dark); box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); border: 1px solid rgba(255, 209, 0, 0.2); }
         .btn-hero-primary:hover { background: linear-gradient(135deg, var(--white), #ffffff); transform: translateY(-4px); box-shadow: 0 12px 30px rgba(11, 65, 205, 0.2); color: var(--primary); border-color: #FFD100; }
 
+        /* */
         .stats-bar {
             max-width: 1000px; margin: -60px auto 50px; padding: 30px;
             border-radius: 30px; display: grid; grid-template-columns: repeat(3, 1fr);
@@ -203,6 +206,7 @@
         .cat-filter-btn { padding: 12px 28px; border-radius: 50px; border: 2px solid var(--bg-light); background: white; color: var(--text-dark); cursor: pointer; transition: var(--transition); font-weight: 700; font-size: 0.95rem; box-shadow: var(--shadow-sm);}
         .cat-filter-btn.active, .cat-filter-btn:hover { background: var(--primary); border-color: var(--primary); color: white; box-shadow: 0 8px 20px rgba(11, 65, 205, 0.3); transform: translateY(-2px);}
 
+        /* */
         #adminSection { display: none; margin-bottom: 60px; }
         .admin-upload-tool { background: white; border-radius: 30px; padding: 40px; box-shadow: var(--shadow-lg); border: 3px solid var(--accent-cyan); position: relative; }
         .admin-tool-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px; padding-bottom: 25px; border-bottom: 1px solid rgba(0,0,0,0.05); flex-wrap: wrap; gap: 20px;}
@@ -224,6 +228,7 @@
         .btn-cancel-edit { background: #f1f5f9; color: #475569; border: 2px solid #cbd5e1; padding: 16px 30px; border-radius: 50px; font-weight: 800; font-size: 1.05rem; cursor: pointer; transition: var(--transition); display: none; align-items: center; gap: 10px;}
         .btn-cancel-edit:hover { background: #e2e8f0; color: #0f172a; }
 
+        /* */
         .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 35px; }
         .product-card { background: white; border-radius: 30px; overflow: hidden; box-shadow: var(--shadow-sm); transition: var(--transition); display: flex; flex-direction: column; position: relative; border: 1px solid rgba(0,0,0,0.03); }
         .product-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(135deg, transparent 0%, rgba(255, 209, 0, 0.05) 100%); pointer-events: none; border-radius: 30px; opacity: 0; transition: opacity 0.3s ease; }
@@ -260,6 +265,7 @@
         .btn-del-card { background: var(--text-dark); }
         .admin-card-btn:hover { transform: scale(1.15); }
 
+        /* */
         footer { background: var(--primary-dark); color: white; padding: 100px 20px 40px; text-align: center; border-top-left-radius: 80px; border-top-right-radius: 80px; position: relative;}
         .footer-logo img { height: 70px; border-radius: 12px; margin-bottom: 20px; }
 
@@ -279,6 +285,7 @@
         .toast.show { transform: translateX(0); }
         .toast-icon { width: 32px; height: 32px; background: rgba(37, 211, 102, 0.15); color: var(--success); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 16px; }
 
+        /* Delete Confirmation Modal */
         .confirm-modal, .admin-modal { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(7, 42, 133, 0.9); display: flex; justify-content: center; align-items: center; z-index: 10000; opacity: 0; visibility: hidden; transition: var(--transition); backdrop-filter: blur(8px); }
         .confirm-modal.active, .admin-modal.active { opacity: 1; visibility: visible; }
         .modal-box { background: white; padding: 40px; border-radius: 40px; width: 92%; max-width: 480px; text-align: center; box-shadow: 0 30px 60px rgba(0,0,0,0.3); position: relative; transform: scale(0.9); transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);}
@@ -359,6 +366,7 @@
             .product-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
         }
 
+        /* Customer Benefits Section */
         .benefits-section {
             background: linear-gradient(135deg, rgba(11, 65, 205, 0.05) 0%, rgba(35, 196, 248, 0.05) 100%);
             padding: 60px 20px;
@@ -709,6 +717,7 @@
     
     <div class="toast" id="toastMessage"></div>
 
+    <!-- -->
     <header>
         <div class="header-logo" id="secretAdminTriggerHeader">
             <img src="logo.jpeg" alt="SR Cartify" onerror="this.src='https://placehold.co/150x50/FFF/0B41CD?text=SR+Cartify'">
@@ -986,6 +995,7 @@
             <button class="cat-filter-btn" data-filter="BEAUTY">Beauty</button>
         </div>
 
+        <!-- -->
         <div id="adminSection">
             <div class="admin-upload-tool reveal">
                 <div class="admin-tool-header">
@@ -1154,6 +1164,7 @@
         </div>
     </section>
 
+    <!-- -->
     <footer>
         <div id="secretAdminTrigger" class="footer-logo" style="cursor: pointer; user-select: none; display: inline-block;">
             <img src="logo.jpeg" alt="SR Cartify Logo" onerror="this.src='https://placehold.co/150x50/FFF/0B41CD?text=SR+Cartify'" style="background: white; padding: 10px;">
@@ -1193,7 +1204,7 @@
         <div class="modal-box" style="max-width: 400px; padding: 30px;">
             <i class="fas fa-exclamation-triangle" style="font-size: 3.5rem; color: var(--accent-red); margin-bottom: 20px;"></i>
             <h3 style="color: var(--primary-dark); margin-bottom: 15px; font-size: 1.5rem; font-weight: 800;">Delete Product?</h3>
-            <p style="color: var(--text-light); margin-bottom: 25px;">This action cannot be undone. Are you sure you want to remove this item from your database?</p>
+            <p style="color: var(--text-light); margin-bottom: 25px;">This action cannot be undone. Are you sure you want to remove this item from your store?</p>
             <div style="display: flex; gap: 15px; justify-content: center;">
                 <button id="cancelDeleteBtn" class="btn" style="background: var(--bg-light); color: var(--text-dark); flex: 1;">Cancel</button>
                 <button id="confirmDeleteBtn" class="btn" style="background: var(--accent-red); color: white; flex: 1;">Delete</button>
@@ -1201,14 +1212,14 @@
         </div>
     </div>
 
+    <!-- -->
     <script type="module">
-        // Import Firebase Functions
         import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
         import { getAuth, signInAnonymously, signInWithCustomToken } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
         import { getFirestore, doc, collection, onSnapshot, addDoc, updateDoc, deleteDoc, getDocs } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
 
-        // Your provided specific Firebase Config combined with environment variables fallback
-        const userProvidedConfig = {
+        // Your exact requested Firebase configuration
+        const firebaseConfig = {
             apiKey: "AIzaSyBB6jWkFUA9nN6h3U7I3xvMUnMBViPLSqY",
             authDomain: "srcartify-76927.firebaseapp.com",
             projectId: "srcartify-76927",
@@ -1218,17 +1229,16 @@
             measurementId: "G-WRQ2YS5GYR"
         };
         
-        // Use user's config as default for external deployment, but map to system var if inside IDE
-        const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : userProvidedConfig;
-        const appId = typeof __app_id !== 'undefined' ? __app_id : 'srcartify-default-app';
+        // This ensures it works seamlessly when deployed on your server OR when previewed here in the AI workspace
+        const finalConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : firebaseConfig;
+        const fallbackAppId = typeof __app_id !== 'undefined' ? __app_id : 'srcartify-76927';
         
-        // Initialize Firebase Apps
-        const app = initializeApp(firebaseConfig);
+        const app = initializeApp(finalConfig);
         const db = getFirestore(app);
         const auth = getAuth(app);
 
-        // Required mandated path for cross-compatibility
-        const productsCollectionRef = collection(db, 'artifacts', appId, 'public', 'data', 'products');
+        // Required mandated path for seamless cross-compatibility between platforms
+        const productsCollectionRef = collection(db, 'artifacts', fallbackAppId, 'public', 'data', 'products');
         let products = [];
         let unsubscribe = null;
         let currentUser = null;
@@ -1308,10 +1318,10 @@
             
             unsubscribe = onSnapshot(productsCollectionRef, async (snapshot) => {
                 if(snapshot.empty && isFirstLoad) {
-                    // Seed initial data if DB is completely empty (Good UX fallback)
+                    // Seed initial data if DB is completely empty
                     isFirstLoad = false;
                     await seedInitialData();
-                    return; // The seeder will re-trigger the snapshot once done
+                    return; 
                 }
                 
                 isFirstLoad = false;
@@ -1320,7 +1330,7 @@
                     ...doc.data()
                 }));
                 
-                // Sort locally by createdAt desc (Newest first) since orderBy needs indexes in firestore
+                // Sort locally by createdAt desc (Newest first)
                 products.sort((a, b) => (b.createdAt || 0) - (a.createdAt || 0));
                 
                 renderProducts();
@@ -1338,19 +1348,16 @@
                 { name: "Nordic Minimalist Desk Lamp", category: "HOME", price: 1999.00, oldPrice: 2499.00, badge: "-20%", img: "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&q=80&w=600&h=600", buyLink: "https://example.com/buy/4", purchases: 2100, limited: true, createdAt: Date.now() - 40000 }
             ];
             
-            // Add items one by one securely
             for (let item of seedData) {
-                try {
-                await addDoc(productsCollectionRef, item);
-                } catch(e) {
-                console.error("Seed error", e);
-                }
+                try { await addDoc(productsCollectionRef, item); } 
+                catch(e) { console.error("Seed error", e); }
             }
         }
 
         // Initialize App Auth and kickstart
         initializeAppAuth();
 
+        // 
         function renderProducts() {
             const grid = document.getElementById('productGrid');
             
@@ -1398,7 +1405,6 @@
                 document.head.appendChild(style);
             }
             
-            // Re-bind dynamically injected category filters based on current products state
             updateCategoryFilters();
             filterProducts(); 
         }
@@ -1432,7 +1438,6 @@
             const filterContainer = document.getElementById('categoryFilters');
             const uniqueCats = [...new Set(products.map(p => p.category.toUpperCase()))];
             
-            // We want to ensure ALL categories present in data exist as buttons
             uniqueCats.forEach(cat => {
                 if(![...filterContainer.querySelectorAll('.cat-filter-btn')].find(b => b.dataset.filter === cat)) {
                     const newBtn = document.createElement('button');
@@ -1567,7 +1572,7 @@
             showToast("Admin Mode Secured", "var(--text-light)", "fa-lock");
         });
 
-        // Database Create / Update Request
+        // Form Submit with Database Connection
         document.getElementById('productForm').addEventListener('submit', async (e) => {
             e.preventDefault();
             if(!currentUser) {
@@ -1586,7 +1591,7 @@
                 const imgFile = document.getElementById('prodImgFile').files[0];
 
                 if (imgFile) {
-                    pImg = await compressImage(imgFile); // Compress to stay under 1MB Limit
+                    pImg = await compressImage(imgFile); 
                 } else if (imgUrl) {
                     pImg = imgUrl;
                 } else if (editModeId) {
@@ -1605,13 +1610,11 @@
                 };
 
                 if (editModeId) {
-                    // Update Database
-                    const docRef = doc(db, 'artifacts', appId, 'public', 'data', 'products', editModeId);
+                    const docRef = doc(db, 'artifacts', fallbackAppId, 'public', 'data', 'products', editModeId);
                     await updateDoc(docRef, pData);
                     showToast("Product Updated in Database", "var(--accent-cyan)", "fa-check-circle");
                 } else {
-                    // Add new to Database
-                    pData.createdAt = Date.now(); // for consistent ordering
+                    pData.createdAt = Date.now(); 
                     await addDoc(productsCollectionRef, pData);
                     showToast("New Product Synced to Cloud", "var(--success)", "fa-cloud-upload-alt");
                 }
@@ -1665,7 +1668,7 @@
 
         document.getElementById('confirmDeleteBtn').addEventListener('click', async () => {
             if(productToDelete !== null && currentUser) {
-                const docRef = doc(db, 'artifacts', appId, 'public', 'data', 'products', productToDelete);
+                const docRef = doc(db, 'artifacts', fallbackAppId, 'public', 'data', 'products', productToDelete);
                 try {
                     await deleteDoc(docRef);
                     showToast("Product deleted from Cloud.", "var(--accent-red)", "fa-trash");
